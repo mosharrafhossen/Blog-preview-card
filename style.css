@@ -1,0 +1,151 @@
+/* =========================
+   Font
+========================= */
+@font-face {
+  font-family: 'Figtree';
+  src: url('assets/fonts/Figtree-VariableFont_wght.ttf');
+  font-weight: 500 800;
+  font-display: swap;
+}
+
+/* =========================
+   CSS Variables (Style Guide)
+========================= */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+}
+
+/* =========================
+   Reset
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px; /* Style guide */
+  background-color: var(--yellow);
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem; /* Mobile default */
+}
+
+/* =========================
+   Card (Mobile – 375px)
+========================= */
+.card {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 327px; /* 375px design balance */
+  padding: 1.25rem;
+  border-radius: 16px;
+  border: 1px solid var(--gray-950);
+  box-shadow: 8px 8px 0 var(--gray-950);
+}
+
+/* =========================
+   Image
+========================= */
+.card-img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Content
+========================= */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tag {
+  background-color: var(--yellow);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.date {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gray-950);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--gray-950);
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: var(--yellow);
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+/* =========================
+   Author
+========================= */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+}
+
+.author span {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--gray-950);
+}
+
+/* =========================
+   Desktop (1440px)
+========================= */
+/* =========================
+   Desktop (1440px)
+========================= */
+@media (min-width: 1440px) {
+  body {
+    padding: 2rem;
+  }
+
+  .card {
+    max-width: 420px; /* Desktop design width */
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 1.05rem;
+  }
+}
