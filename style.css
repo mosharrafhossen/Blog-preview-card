@@ -31,7 +31,7 @@ body {
   font-family: 'Figtree', sans-serif;
   font-size: 16px; /* Style guide */
   background-color: var(--yellow);
-  min-height: 120vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
