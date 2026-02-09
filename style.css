@@ -1,6 +1,4 @@
-/* =========================
-   Font
-========================= */
+
 @font-face {
   font-family: 'Figtree';
   src: url('assets/fonts/Figtree-VariableFont_wght.ttf');
@@ -8,9 +6,9 @@
   font-display: swap;
 }
 
-/* =========================
-   CSS Variables (Style Guide)
-========================= */
+
+
+
 :root {
   --yellow: hsl(47, 88%, 63%);
   --white: hsl(0, 0%, 100%);
@@ -18,9 +16,7 @@
   --gray-950: hsl(0, 0%, 7%);
 }
 
-/* =========================
-   Reset
-========================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -29,31 +25,27 @@
 
 body {
   font-family: 'Figtree', sans-serif;
-  font-size: 16px; /* Style guide */
+  font-size: 16px; 
   background-color: var(--yellow);
-  min-height: 120vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem; /* Mobile default */
+  padding: 1rem; 
 }
 
-/* =========================
-   Card (Mobile – 375px)
-========================= */
+
 .card {
   background-color: var(--white);
   width: 100%;
-  max-width: 327px; /* 375px design balance */
+  max-width: 327px; 
   padding: 1.25rem;
   border-radius: 16px;
   border: 1px solid var(--gray-950);
   box-shadow: 8px 8px 0 var(--gray-950);
 }
 
-/* =========================
-   Image
-========================= */
+
 .card-img {
   width: 100%;
   display: block;
@@ -61,9 +53,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* =========================
-   Content
-========================= */
+
 .card-content {
   display: flex;
   flex-direction: column;
@@ -104,9 +94,7 @@ body {
   line-height: 1.5;
 }
 
-/* =========================
-   Author
-========================= */
+
 .author {
   display: flex;
   align-items: center;
@@ -125,19 +113,14 @@ body {
   color: var(--gray-950);
 }
 
-/* =========================
-   Desktop (1440px)
-========================= */
-/* =========================
-   Desktop (1440px)
-========================= */
+
 @media (min-width: 1440px) {
   body {
     padding: 2rem;
   }
 
   .card {
-    max-width: 420px; /* Desktop design width */
+    max-width: 420px; 
     padding: 1.5rem;
   }
 
